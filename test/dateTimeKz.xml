@@ -1,0 +1,509 @@
+<test>
+
+    <!-- ABSOLUTE DATES and TIME -->
+
+    <test-case>
+        <q>сағат он бірде он бір минут</q>
+        <a>dateTime: { "hour": 11, "minute": 11 }</a>
+    </test-case>
+
+    <test-case id="3 октября 1989">
+        <q>3 қазан 1989</q>
+        <a>dateTime: { "year": 1989, "month": 10, "day": 3 }</a>
+    </test-case>
+
+    <test-case id="11 часов 30 минут 3 октября 1989">
+        <q>11 сағат 30 минут 3 қазан 1989 ж</q>
+        <a>dateTime: { "year": 1989, "month": 10, "day": 3, "hour": 11, "minute": 30 }</a>
+    </test-case>
+
+    <test-case id="первого января тысяча девятисотого">
+        <q>бірінші қаңтар мың тоғыз жүз</q>
+        <a>dateTime: { "year": 1900, "month": 1, "day": 1 }</a>
+    </test-case>
+
+    <test-case id="в тысяча девятисот пятом году">
+        <q>жылы мың тоғыз жүз бесінші жыл</q>
+        <a>dateTime: { "year": 1905 }</a>
+    </test-case>
+
+    <test-case id="в 1905 году">
+        <q>1905 жылы</q>
+        <a>dateTime: { "year": 1905 }</a>
+    </test-case>
+
+    <test-case id="3 октября">
+        <q>3 қазан</q>
+        <a>dateTime: { "month": 10, "day": 3 }</a>
+    </test-case>
+
+    <test-case id="15:19">
+        <q>15:19</q>
+        <a>dateTime: { "hour": 15, "minute": 19 }</a>
+    </test-case>
+
+    <test-case id="15:19:12">
+        <q>15:19:12</q>
+        <a>dateTime: { "hour": 15, "minute": 19, "second": 12 }</a>
+    </test-case>
+
+    <test-case id="в 8 утра 22 января (1)">
+        <q>таңғы 8-де 22 қаңтар</q>
+        <a>dateTime: { "month": 1, "day": 22, "hour": 8, "period": "am" }</a>
+    </test-case>
+
+    <test-case id="в 8 утра 22 января (2)">
+        <q>8-де таңғы 22 қаңтар</q>
+        <a>dateTime: { "month": 1, "day": 22, "hour": 8, "period": "am" }</a>
+    </test-case>
+
+    <test-case id="в 8 вечера первого числа">
+        <q>бірінші күні кешкі 8-де</q>
+        <a>dateTime: { "day": 1, "hour": 20, "period": "pm" }</a>
+    </test-case>
+
+    <test-case id="пол одинадцатого (1)">
+        <q>он жарымда</q>
+        <a>dateTime: { "hour": 10, "minute": 30 }</a>
+    </test-case>
+
+    <test-case id="пол одинадцатого (2)">
+        <q>он жарымға</q>
+        <a>dateTime: { "hour": 10, "minute": 30 }</a>
+    </test-case>
+
+    <test-case id="без пятнадцати 8 вечера">
+        <q>он бес минут болмаса кешкі 8 сағат</q>
+        <a>dateTime: { "hour": 19, "minute": 45, "period": "pm" }</a>
+    </test-case>
+
+    <test-case id="без 15 семь">
+        <q>он бес минут болмаса 7 сағат</q>
+        <a>dateTime: { "hour": 6, "minute": 45 }</a>
+    </test-case>
+
+    <test-case id="пятнадцать минут после 8 вечера">
+        <q>он бес минут кейін кешкі 8</q>
+        <a>dateTime: { "minutes": 15, "hour": 20, "period": "pm" }</a>
+    </test-case>
+
+    <test-case id="в десять пятьдесят четыре">
+        <q>он елу төрт</q>
+        <a>dateTime: { "hour": 10, "minute": 54 }</a>
+    </test-case>
+
+    <test-case id="7 марта 1977 в 10 утра">
+        <q>7 наурыз 1977 сағат 10 таңертең</q>
+        <a>dateTime: { "year": 1977, "month": 3, "day": 7, "hour": 10, "period": "am" }</a>
+    </test-case>
+
+    <test-case id="7 марта 1977 в 10 утра">
+        <q>7 наурыз 1977 таңертең сағат 10</q>
+        <a>dateTime: { "year": 1977, "month": 3, "day": 7, "hour": 10, "period": "am" }</a>
+    </test-case>
+
+    <test-case id="пол восьмого">
+        <q>жетінші жарымға</q>
+        <a>dateTime: { "hour": 7, "minute": 30 }</a>
+    </test-case>
+
+    <test-case id="пол девятого">
+        <q>сегізінші жарымға</q>
+        <a>dateTime: { "hour": 8, "minute": 30 }</a>
+    </test-case>
+
+    <test-case id="в полночь">
+        <q>түн ортасында</q>
+        <a>dateTime: { "hour": 0 }</a>
+    </test-case>
+
+    <test-case id="три часа пополудни">
+        <q>түстен кейін үш сағат</q>
+        <a>dateTime: { "hour": 15, "period": "pm" }</a>
+    </test-case>
+
+    <test-case id="без трех двенадцать">
+        <q>үш минут жоқ он екі</q>
+        <a>dateTime: { "hour": 11, "minute": 57 }</a>
+    </test-case>
+
+    <test-case id="в три ноль восемь пятого числа">
+        <q>бесінші күн үш сағат сегіз минут</q>
+        <a>dateTime: { "day": 5, "hour": 3, "minute": 8 }</a>
+    </test-case>
+
+    <test-case id="без тринадцати восемнадцать">
+        <q>он үш минут жоқ он сегіз</q>
+        <a>dateTime: { "hour": 17, "minute": 47 }</a>
+    </test-case>
+
+    <test-case id="в одиннадцать одиннадцать">
+        <q>он бір он бірде</q>
+        <a>dateTime: { "hour": 11, "minute": 11 }</a>
+    </test-case>
+
+    <test-case id="в семь сорок">
+        <q>жеті қырықта</q>
+        <a>dateTime: { "hour": 7, "minute": 40 }</a>
+    </test-case>
+
+    <test-case id="в ноль часов ноль минут">
+        <q>нөл сағат нөл минут</q>
+        <a>dateTime: { "hour": 0, "minute": 0 }</a>
+    </test-case>
+
+    <test-case id="в три">
+        <q>үш сағат</q>
+        <a>dateTime: { "hour": 3 }</a>
+    </test-case>
+
+    <test-case id="10 11 утра">
+        <q>10 11 таңғы</q>
+        <a>dateTime: { "hour": 10, "minute": 11, "period": "am" }</a>
+    </test-case>
+
+    <test-case id="завтрашний день">
+        <q>ертең</q>
+        <a>dateTime: { "days": 1 }</a>
+    </test-case>
+
+    <test-case id="12 дня">
+        <q>12 сағат</q>
+        <a>dateTime: { "hour": 12 }</a>
+    </test-case>
+
+    <test-case id="будильник на 6 ноль пять утра ">
+        <q>таңғы 6 нөл бес дабыл </q>
+        <a>dateTime: { "hour": 6, "minute": 5, "period": "am" }</a>
+    </test-case>
+
+    <test-case id="будильник на 6 05 утра ">
+        <q>таңғы 6 05 дабыл </q>
+        <a>dateTime: { "hour": 6, "minute": 5, "period": "am" }</a>
+    </test-case>
+
+    <!-- а этот день 30 января он только в воскресенье в субботу -->
+    <!-- TODO он=10 -->
+    <test-case id="а этот день 30 января только в воскресенье в субботу">
+        <q>а этот день 30 января только в воскресенье в субботу</q>
+        <a>dateTime: { "month": 1, "day": 30 }</a> 
+    </test-case>
+
+    <test-case id="первый час ночи">
+        <q>түннің бірінші сағаты</q>
+        <a>dateTime: { "hour": 1, "period": "am" }</a>
+    </test-case>
+
+    <test-case id="час ноль пять">
+        <q>бір сағат нөл бес</q>
+        <a>dateTime: { "hour": 1, "minute": 5 }</a>
+    </test-case>
+
+    <test-case id="1 мая день на родине ">
+        <q>1 мамыр Отандағы күн </q>
+        <a>dateTime: { "month": 5, "day": 1 }</a>
+    </test-case>
+
+    <test-case id="будильник на 6 00 утра 5 минут ">
+        <q>таңғы 6 00 дабыл 5 минут</q>
+        <a>dateTime: { "hour": 6, "minute": 0, "period": "am" }</a>
+    </test-case>
+
+    <test-case id="Напомни мне в 8 00 10 минут умыться">
+        <q>Маған 8 00 10 минутта жууды еске түсіріңіз</q>
+        <a>dateTime: { "hour": 8, "minute": 10 }</a>
+    </test-case>
+
+    <test-case id="какая погода ожидается на следующий день в 6 00 вечера">
+        <q>келесі күні кешке сағат 6 00 қандай ауа райы күтіледі</q>
+        <a>dateTime: { "days": 1, "hour": 18, "minute": 0, "period": "pm" }</a>
+    </test-case>
+
+    <test-case id="какая погода ожидается на следующий день в 6 00 вечера">
+        <q>келесі күні кешке 6 00 қандай ауа райы күтіледі</q>
+        <a>dateTime: { "days": 1, "hour": 18, "minute": 0, "period": "pm" }</a>
+    </test-case>
+
+    <test-case id="5 июня 2012 года 12 часов 45 минут воскресенье">
+        <q>2012 жылғы 5 маусым 12 сағат 45 минут жексенбі</q>
+        <a>dateTime: { "year": 2012, "month": 6, "day": 5, "weekDay": 7, "hour": 12, "minute": 45 }</a>
+    </test-case>
+
+    <test-case id="в 3 часа 0 минут">
+        <q>3 сағат 0 минутта</q>
+        <a>dateTime: { "hour": 3, "minute": 0 }</a>
+    </test-case>
+
+    <test-case id="в 1 час дня (1)">
+        <q>күндіз бір сағатында</q>
+        <a>dateTime: { "hour": 13, "period": "pm" }</a>
+    </test-case>
+
+    <test-case id="в 1 час дня (2)">
+        <q>күндіз сағат 1-де</q>
+        <a>dateTime: { "hour": 13, "period": "pm" }</a>
+    </test-case>
+
+    <test-case id="Включи будильник на 4 часа 20 минут">
+        <q>Дабылды 4 сағат 20 минутқа қосыңыз</q>
+        <a>dateTime: { "hour": 4, "minute": 20 }</a>
+    </test-case>
+
+    <test-case id="Включи будильник на 8 часов 30 минут">
+        <q>Дабылды 8 сағат 30 минутқа қосыңыз</q>
+        <a>dateTime: { "hour": 8, "minute": 30 }</a>
+    </test-case>
+
+    <test-case id="в час">
+        <q>сағатына</q>
+        <a>dateTime: { "hour": 1 }</a>
+    </test-case>
+
+    <test-case id="в 6">
+        <q>алтыда</q>
+        <a>dateTime: { "hour": 6 }</a>
+    </test-case>
+
+    <test-case id="Включи будильник на 9">
+        <q>Дабылды 9-ға қосыңыз</q>
+        <a>dateTime: { "hour": 9 }</a>
+    </test-case>
+
+    <test-case id="Отключи будильник на 8 00">
+        <q>Дабылды 8 00 де өшіріңіз</q>
+        <a>dateTime: { "hour": 8, "minute": 0 }</a>
+    </test-case>
+
+    <test-case id="пол 12">
+        <q>11 жарымға</q>
+        <a>dateTime: { "hour": 11, "minute": 30 }</a>
+    </test-case>
+
+    <test-case id="Поставить будильник на 20 минут 5">
+        <q>Дабылды 4 сағатқа 20 минутқа қойыңыз</q>
+        <a>dateTime: { "hour": 4, "minute": 20 }</a>
+    </test-case>
+
+    <test-case id="Поставить будильник на 20 минут пятого">
+        <q>Дабылды төртінші сағатқа 20 минутқа қойыңыз</q>
+        <a>dateTime: { "hour": 4, "minute": 20 }</a>
+    </test-case>
+
+    <test-case id="завтра в 4 00 утра">
+        <q>ертең таңғы 4 00 де</q>
+        <a>dateTime: { "days": 1, "hour": 4, "minute": 0, "period": "am" }</a>
+    </test-case>
+
+    <test-case id="Поставь будильник на двадцать два">
+        <q>Дабылды жиырма екіге қойыңыз</q>
+        <a>dateTime: { "hour": 22 }</a>
+    </test-case>
+
+    <test-case id="семь часов тридцать минут утра">
+        <q>таңғы жеті сағат отыз минут</q>
+        <a>dateTime: { "hour": 7, "minute": 30, "period": "am" }</a>
+    </test-case>
+
+    <test-case id="Поставь будильник на семь часов">
+        <q>Дабылды жеті сағатқа қойыңыз</q>
+        <a>dateTime: { "hour": 7 }</a>
+    </test-case>
+
+    <test-case id="разбуди меня 6 часов 30">
+        <q>мені оятыңыз 6 сағат 30</q>
+        <a>dateTime: { "hour": 6, "minute": 30 }</a>
+    </test-case>
+
+    <test-case id="без пяти 4 утра">
+        <q>бес минут жоқ таңғы 4</q>
+        <a>dateTime: { "hour": 3, "minute": 55, "period": "am" }</a>
+    </test-case>
+
+    <test-case id="без 5 4 утра">
+        <q>5 минут жоқ таңғы 4</q>
+        <a>dateTime: { "hour": 3, "minute": 55, "period": "am" }</a>
+    </test-case>
+
+    <test-case id="Удали будильник 6 15 16 октября">
+        <q>Дабылды жою 6 15 16 қазан</q>
+        <a>dateTime: { "month": 10, "day": 16, "hour": 6, "minute": 15 }</a>
+    </test-case>
+
+    <test-case id="Разбуди меня в шесть часов 10 минут утра">
+        <q>Мені таңғы сағат алты он минутта оятыңыз</q>
+        <a>dateTime: { "hour": 6, "minute": 10, "period": "am" }</a>
+    </test-case>
+
+    <test-case id="Установи будильник на 12 утра">
+        <q>Дабылды таңертең 12 сағатқа қойыңыз</q>
+        <a>dateTime: { "hour": 0, "period": "am" }</a>
+    </test-case>
+
+    <test-case id="три часа двадцать минут вечера">
+        <q>кешкі үш сағат жиырма минут</q>
+        <a>dateTime: { "hour": 15, "minute": 20, "period": "pm" }</a>
+    </test-case>
+
+    <test-case id="Поставь будильник на две минуты шестого утра">
+        <q>Дабылды таңғы бесінші сағатқа екі минутқа қойыңыз</q>
+        <a>dateTime: { "hour": 5, "minute": 2, "period": "am" }</a>
+    </test-case>
+
+    <test-case id="в 22 55 ночи">
+        <q>түнгі 22 55 те</q>
+        <a>dateTime: { "hour": 22, "minute": 55, "period": "pm" }</a>
+    </test-case>
+
+    <test-case id="Поставь будильник на шесть часов и три минуты">
+        <q>Дабылды алты сағат үш минутқа қойыңыз</q>
+        <a>dateTime: { "hour": 6, "minute": 3 }</a>
+    </test-case>
+
+    <test-case id="установи будильник на завтра на 15 30">
+        <q>дабылды ертең таңғы 15 30 ға қойыңыз</q>
+        <a>dateTime: { "days": 1, "hour": 15, "minute": 30, "period": "pm" }</a>
+    </test-case>
+
+    <test-case id="29 января в 9">
+        <dateTime>2018-01-29 10:15:00</dateTime>
+        <q>29 қаңтар 9</q>
+        <a>dateTime: { "month": 1, "day": 29, "hour": 9 }</a>
+    </test-case>
+
+    <test-case id="31.10.21 ">
+        <q>31.10.21 </q>
+        <a>dateTime: { "year": 21, "month": 10, "day": 31 }</a>
+    </test-case>
+
+    <test-case id="12.11.2021г">
+        <q>12.11.2021ж</q>
+        <a>dateTime: { "year": 2021, "month": 11, "day": 12 }</a>
+    </test-case>
+
+    <!-- PARTS OF THE DAY -->
+    <test-case id="вечер">
+        <q>кешке</q>
+        <a>dateTime: { "hour": 18 }</a>
+    </test-case>
+
+    <test-case id="сегодня вечером">
+        <q>бүгін кешке</q>
+        <a>dateTime: { "days": 0, "hour": 18 }</a>
+    </test-case>
+
+    <test-case id="завтра утром">
+        <q>ертең таңертең</q>
+        <a>dateTime: { "days": 1, "hour": 8 }</a>
+    </test-case>
+
+    <!-- RELATIVE DATE -->
+    <test-case id="сегодня">
+        <q>бүгін</q>
+        <a>dateTime: {}</a>
+    </test-case>
+
+    <test-case id="завтра">
+        <q>Ертең</q>
+        <a>dateTime: { "days": 1 }</a>
+    </test-case>
+
+    <test-case id="после завтра">
+        <q>арғы күні кейін дабылды орнатыңыз</q>
+        <a>dateTime: { "days": 2 }</a>
+    </test-case>
+
+    <test-case id="установить будильник через 1 час 40 минут">
+        <q>Дабылды 1 сағат 40 минуттан арқылы орнатыңыз</q>
+        <a>dateTime: { "hours": 1, "minutes": 40 }</a>
+    </test-case>
+
+    <test-case>
+        <q>таймерді бір минутқа орнатыңыз</q>
+        <a>dateTime: { "minutes": 1 }</a>
+    </test-case>
+
+    <test-case>
+        <q>Таймерді он бір минуттан орнатыңыз</q>
+        <a>dateTime: { "minutes": 11 }</a>
+    </test-case>
+
+    <test-case>
+        <q>Таймерді жарты сағатқа орнатыңыз</q>
+        <a>dateTime: { "minutes": 30 }</a>
+    </test-case>
+
+    <test-case>
+        <q>Дуся мені үш минуттан кейін оятады</q>
+        <a>dateTime: { "minutes": 3 }</a>
+    </test-case>
+
+    <test-case>
+        <q>бiр минуттан кейін ояныңыз</q>
+        <a>dateTime: { "minutes": 1 }</a>
+    </test-case>
+
+    <test-case>
+        <q>таймер 1 минутқа</q>
+        <a>dateTime: { "minutes": 1 }</a>
+    </test-case>
+
+    <test-case>
+        <q>таймер 2 минут 25 секунд</q>
+        <a>dateTime: { "minutes": 2, "seconds": 25 }</a>
+    </test-case>
+
+    <test-case>
+        <q>Таймер 5 минут 15 секунд</q>
+        <a>dateTime: { "minutes": 5, "seconds": 15 }</a>
+    </test-case>
+
+    <test-case>
+        <q>5 секундтан кейін</q>
+        <a>dateTime: { "seconds": 5 }</a>
+    </test-case>
+
+    <!-- периоды -->
+    <test-case id="$DatePeriod">
+        <dateTime>2020-12-31 13:23:55</dateTime>
+        <q>11.12.20 бастап 12.12.20 дейін</q>
+        <a state="/DatePeriod">DatePeriod: { "startDate": { "day": 11, "month": 12, "year": 20 },
+            "endDate": { "day": 12, "month": 12, "year": 20 } }</a>
+        <a>Период true</a>
+        <a>Период в прошлом true</a>
+        <a>Период в будущем false</a>
+        <a>Период строго в прошлом true</a>
+        <a>Период строго в будущем false</a>
+        <a>Период в процессе false</a>
+        <a>Период строго в процессе false</a>
+    </test-case>
+
+    <!-- TODO с 11 декабря 2020 по 12 декабря 2020 -->
+    <!-- <test-case>
+        <dateTime>2020-12-31 13:23:55</dateTime>
+        <q>11 желтоқсаннан 2020 12 желтоқсанға дейін 2020</q>
+        <a state="/DatePeriod">DatePeriod: { "startDate": { "day": 11, "month": 12, "year": 2020 },
+            "endDate": { "day": 12, "month": 12, "year": 2020 } }</a>
+        <a>Период true</a>
+        <a>Период в прошлом true</a>
+        <a>Период в будущем false</a>
+        <a>Период строго в прошлом true</a>
+        <a>Период строго в будущем false</a>
+        <a>Период в процессе false</a>
+        <a>Период строго в процессе false</a>
+    </test-case> -->
+
+    <!-- TODO с 11 по 12 декабря 2020 -->
+    <!-- <test-case>
+        <dateTime>2020-12-31 13:23:55</dateTime>
+        <q>11 желтоқсаннан 12 желтоқсанға дейін 2020</q>
+        <a state="/DatePeriod">DatePeriod: { "startDate": { "day": 11, "month": 12, "year": 2020 },
+            "endDate": { "day": 12, "month": 12, "year": 2020 } }</a>
+        <a>Период true</a>
+        <a>Период в прошлом true</a>
+        <a>Период в будущем false</a>
+        <a>Период строго в прошлом true</a>
+        <a>Период строго в будущем false</a>
+        <a>Период в процессе false</a>
+        <a>Период строго в процессе false</a>
+    </test-case> -->
+</test>

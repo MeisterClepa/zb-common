@@ -1,0 +1,50 @@
+<test>
+
+    <test-case>
+
+        <mockData>
+            <query method="get">https://geocode-maps.yandex.ru/1.x/?apikey=863c7481-0e5a-4869-a7c8-8b244728e49f&amp;format=json&amp;geocode=%D1%81%D0%BF%D0%B1%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0%2010-%D1%8F%20%D1%81%D0%BE%D0%B2%D0%B5%D1%82%D1%81%D0%BA%D0%B0%D1%8F%2026</query>
+            <response type="json" status="201">
+                {"response":{"GeoObjectCollection":{"metaDataProperty":{"GeocoderResponseMetaData":{"request":"спб улица 10-я советская 26","results":"10","found":"1"}},"featureMember":[{"GeoObject":{"metaDataProperty":{"GeocoderMetaData":{"precision":"exact","text":"Россия, Санкт-Петербург, 10-я Советская улица, 26","kind":"house","Address":{"country_code":"RU","formatted":"Россия, Санкт-Петербург, 10-я Советская улица, 26","postal_code":"191144","Components":[{"kind":"country","name":"Россия"},{"kind":"province","name":"Северо-Западный федеральный округ"},{"kind":"province","name":"Санкт-Петербург"},{"kind":"locality","name":"Санкт-Петербург"},{"kind":"street","name":"10-я Советская улица"},{"kind":"house","name":"26"}]},"AddressDetails":{"Country":{"AddressLine":"Россия, Санкт-Петербург, 10-я Советская улица, 26","CountryNameCode":"RU","CountryName":"Россия","AdministrativeArea":{"AdministrativeAreaName":"Санкт-Петербург","Locality":{"LocalityName":"Санкт-Петербург","Thoroughfare":{"ThoroughfareName":"10-я Советская улица","Premise":{"PremiseNumber":"26","PostalCode":{"PostalCodeNumber":"191144"}}}}}}}}},"name":"10-я Советская улица, 26","description":"Санкт-Петербург, Россия","boundedBy":{"Envelope":{"lowerCorner":"30.380484 59.933244","upperCorner":"30.388695 59.937364"}},"Point":{"pos":"30.384589 59.935304"}}}]}}}
+            </response>
+        </mockData>
+
+        <mockData>
+            <query method="get">https://maps.googleapis.com/maps/api/geocode/json?key=AIzaSyCrba-g0h3on_uhYaZ0cV7dJ0dMxc4qzyQ&amp;address=%D1%81%D0%BF%D0%B1%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0%2010-%D1%8F%20%D1%81%D0%BE%D0%B2%D0%B5%D1%82%D1%81%D0%BA%D0%B0%D1%8F%2026</query>
+            <response type="json" status="201">
+                { "results" : [ { "address_components" : [ { "long_name" : "26", "short_name" : "26", "types" : [ "street_number" ] }, { "long_name" : "10-Ya Sovetskaya Ulitsa", "short_name" : "10-Ya Sovetskaya Ulitsa", "types" : [ "route" ] }, { "long_name" : "Tsentralnyy rayon", "short_name" : "Tsentralnyy rayon", "types" : [ "political", "sublocality", "sublocality_level_1" ] }, { "long_name" : "Sankt-Peterburg", "short_name" : "СПБ", "types" : [ "locality", "political" ] }, { "long_name" : "Tsentral'nyy", "short_name" : "Tsentral'nyy", "types" : [ "administrative_area_level_3", "political" ] }, { "long_name" : "Russia", "short_name" : "RU", "types" : [ "country", "political" ] }, { "long_name" : "191144", "short_name" : "191144", "types" : [ "postal_code" ] } ], "formatted_address" : "10-Ya Sovetskaya Ulitsa, 26, Sankt-Peterburg, Russia, 191144", "geometry" : { "location" : { "lat" : 59.935322, "lng" : 30.3845024 }, "location_type" : "ROOFTOP", "viewport" : { "northeast" : { "lat" : 59.9366709802915, "lng" : 30.3858513802915 }, "southwest" : { "lat" : 59.9339730197085, "lng" : 30.3831534197085 } } }, "place_id" : "ChIJi5QMpZUxlkYRkuh4ufWuy_o", "plus_code" : { "compound_code" : "W9PM+4R Okkerville, Saint Petersburg, Russia", "global_code" : "9GFGW9PM+4R" }, "types" : [ "street_address" ] } ], "status" : "OK" }
+            </response>
+        </mockData>
+
+        <q>test geocoder</q>
+        <a>Введите адрес</a>
+        <q>спб улица 10-я советская 26</q>
+        <a>Координаты яндекса: { "lat": "59.935304", "lon": "30.384589" }</a>
+        <a>Координаты гугла: { "lat": 59.935322, "lon": 30.3845024 }</a>
+    </test-case>
+
+    <!-- TODO падает тест -->
+    <!-- <test-case>
+
+        <mockData>
+            <query method="get">https://geocode-maps.yandex.ru/1.x/?apikey=863c7481-0e5a-4869-a7c8-8b244728e49f&amp;format=json&amp;geocode=%D0%BC%D0%BE%D1%81%D0%BA%D0%B2%D0%B0+%D1%83%D0%BB%D0%B8%D1%86%D0%B0+%D0%BA%D1%80%D0%B0%D1%81%D0%BD%D0%BE%D0%B4%D0%B0%D1%80%D1%81%D0%BA%D0%B0%D1%8F+21</query>
+            <response type="json" status="201">
+                {"response":{"GeoObjectCollection":{"metaDataProperty":{"GeocoderResponseMetaData":{"request":"москва улица краснодарская 21","results":"10","found":"1"}},"featureMember":[{"GeoObject":{"metaDataProperty":{"GeocoderMetaData":{"precision":"exact","text":"Россия, Москва, Краснодарская улица, 21","kind":"house","Address":{"country_code":"RU","formatted":"Россия, Москва, Краснодарская улица, 21","postal_code":"109386","Components":[{"kind":"country","name":"Россия"},{"kind":"province","name":"Центральный федеральный округ"},{"kind":"province","name":"Москва"},{"kind":"locality","name":"Москва"},{"kind":"street","name":"Краснодарская улица"},{"kind":"house","name":"21"}]},"AddressDetails":{"Country":{"AddressLine":"Россия, Москва, Краснодарская улица, 21","CountryNameCode":"RU","CountryName":"Россия","AdministrativeArea":{"AdministrativeAreaName":"Москва","Locality":{"LocalityName":"Москва","Thoroughfare":{"ThoroughfareName":"Краснодарская улица","Premise":{"PremiseNumber":"21","PostalCode":{"PostalCodeNumber":"109386"}}}}}}}}},"name":"Краснодарская улица, 21","description":"Москва, Россия","boundedBy":{"Envelope":{"lowerCorner":"37.74631 55.67557","upperCorner":"37.754521 55.680209"}},"Point":{"pos":"37.750415 55.67789"}}}]}}}
+            </response>
+        </mockData>
+
+        <mockData>
+            <query method="get">https://maps.googleapis.com/maps/api/geocode/json?key=AIzaSyCrba-g0h3on_uhYaZ0cV7dJ0dMxc4qzyQ&amp;address=%D0%BC%D0%BE%D1%81%D0%BA%D0%B2%D0%B0+%D1%83%D0%BB%D0%B8%D1%86%D0%B0+%D0%BA%D1%80%D0%B0%D1%81%D0%BD%D0%BE%D0%B4%D0%B0%D1%80%D1%81%D0%BA%D0%B0%D1%8F+21</query>
+            <response type="json" status="201">
+                { "results" : [ { "address_components" : [ { "long_name" : "21", "short_name" : "21", "types" : [ "street_number" ] }, { "long_name" : "Krasnodarskaya Ulitsa", "short_name" : "Krasnodarskaya Ulitsa", "types" : [ "route" ] }, { "long_name" : "Yugo-Vostochnyy administrativnyy okrug", "short_name" : "Yugo-Vostochnyy administrativnyy okrug", "types" : [ "political", "sublocality", "sublocality_level_1" ] }, { "long_name" : "Moskva", "short_name" : "Moskva", "types" : [ "locality", "political" ] }, { "long_name" : "Lyublino", "short_name" : "Lyublino", "types" : [ "administrative_area_level_3", "political" ] }, { "long_name" : "Moskva", "short_name" : "Moskva", "types" : [ "administrative_area_level_2", "political" ] }, { "long_name" : "Russia", "short_name" : "RU", "types" : [ "country", "political" ] }, { "long_name" : "109386", "short_name" : "109386", "types" : [ "postal_code" ] } ], "formatted_address" : "Krasnodarskaya Ulitsa, 21, Moskva, Russia, 109386", "geometry" : { "bounds" : { "northeast" : { "lat" : 55.6780029, "lng" : 37.75080579999999 }, "southwest" : { "lat" : 55.677854, "lng" : 37.7500869 } }, "location" : { "lat" : 55.677907, "lng" : 37.7504068 }, "location_type" : "ROOFTOP", "viewport" : { "northeast" : { "lat" : 55.6792774302915, "lng" : 37.7517953302915 }, "southwest" : { "lat" : 55.6765794697085, "lng" : 37.7490973697085 } } }, "place_id" : "ChIJC9HQSkS0SkERR8Ln97VEULM", "types" : [ "premise" ] } ], "status" : "OK" }
+            </response>
+        </mockData>
+
+        <q>test geocoder</q>
+        <a>Введите адрес</a>
+        <q>москва ул. краснодарская 21</q>
+        <a>Координаты яндекса: { "lat": "55.67789", "lon": "37.750415" }</a>
+        <a>Координаты гугла: { "lat": 55.677907, "lon": 37.7504068 }</a>
+    </test-case> -->
+
+</test>

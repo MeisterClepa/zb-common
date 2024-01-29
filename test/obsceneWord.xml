@@ -1,0 +1,562 @@
+<test>
+    <test-case>
+        <q>obsceneWord</q>
+        <a state="/ObsceneWord"/>
+        <q>скипидар</q>
+        <a state="/ObsceneWord/NotObscene"/>
+    </test-case>
+
+    <test-case>
+        <q>obsceneWord</q>
+        <a state="/ObsceneWord"/>
+        <q>нахулиганить</q>
+        <a state="/ObsceneWord/NotObscene"/>
+    </test-case>
+
+    <test-case>
+        <q>obsceneWord</q>
+        <a state="/ObsceneWord"/>
+        <q>застрахуй</q>
+        <a state="/ObsceneWord/NotObscene"/>
+    </test-case>
+
+    <test-case>
+        <q>obsceneWord</q>
+        <a state="/ObsceneWord"/>
+        <q>похулить</q>
+        <a state="/ObsceneWord/NotObscene"/>
+    </test-case>
+
+    <test-case>
+        <q>obsceneWord</q>
+        <a state="/ObsceneWord"/>
+        <q>страхуемый</q>
+        <a state="/ObsceneWord/NotObscene"/>
+    </test-case>
+
+    <test-case>
+        <q>obsceneWord</q>
+        <a state="/ObsceneWord"/>
+        <q>чмок</q>
+        <a state="/ObsceneWord/NotObscene"/>
+    </test-case>
+
+    <test-case>
+        <q>obsceneWord</q>
+        <a state="/ObsceneWord"/>
+        <q>педро</q>
+        <a state="/ObsceneWord/NotObscene"/>
+    </test-case>
+
+    <test-case>
+        <q>obsceneWord</q>
+        <a state="/ObsceneWord"/>
+        <q>замудрить</q>
+        <a state="/ObsceneWord/NotObscene"/>
+    </test-case>
+
+    <test-case>
+        <q>obsceneWord</q>
+        <a state="/ObsceneWord"/>
+        <q>ябеда</q>
+        <a state="/ObsceneWord/NotObscene"/>
+    </test-case>
+
+    <test-case>
+        <q>obsceneWord</q>
+        <a state="/ObsceneWord"/>
+        <q>пенистый</q>
+        <a state="/ObsceneWord/NotObscene"/>
+    </test-case>
+
+    <test-case>
+        <q>obsceneWord</q>
+        <a state="/ObsceneWord"/>
+        <q>гондурас</q>
+        <a state="/ObsceneWord/NotObscene"/>
+    </test-case>
+
+    <test-case>
+        <q>obsceneWord</q>
+        <a state="/ObsceneWord"/>
+        <q>гондола</q>
+        <a state="/ObsceneWord/NotObscene"/>
+    </test-case>
+
+    <test-case>
+        <q>obsceneWord</q>
+        <a state="/ObsceneWord"/>
+        <q>посрамить</q>
+        <a state="/ObsceneWord/NotObscene"/>
+    </test-case>
+
+    <test-case>
+        <q>obsceneWord</q>
+        <a state="/ObsceneWord"/>
+        <q>аналог</q>
+        <a state="/ObsceneWord/NotObscene"/>
+    </test-case>
+
+    <test-case>
+        <q>obsceneWord</q>
+        <a state="/ObsceneWord"/>
+        <q>анальгин</q>
+        <a state="/ObsceneWord/NotObscene"/>
+    </test-case>
+
+    <test-case>
+        <q>obsceneWord</q>
+        <a state="/ObsceneWord"/>
+        <q>аналитик</q>
+        <a state="/ObsceneWord/NotObscene"/>
+    </test-case>
+
+    <test-case>
+        <q>obsceneWord</q>
+        <a state="/ObsceneWord"/>
+        <q>анализ</q>
+        <a state="/ObsceneWord/NotObscene"/>
+    </test-case>
+
+    <test-case>
+        <q>obsceneWord</q>
+        <a state="/ObsceneWord"/>
+        <q>анальгетик</q>
+        <a state="/ObsceneWord/NotObscene"/>
+    </test-case>
+
+    <test-case>
+        <q>obsceneWord</q>
+        <a state="/ObsceneWord"/>
+        <q>анальгезирующий</q>
+        <a state="/ObsceneWord/NotObscene"/>
+    </test-case>
+
+    <test-case>
+        <q>obsceneWord</q>
+        <a state="/ObsceneWord"/>
+        <q>астрахань</q>
+        <a state="/ObsceneWord/NotObscene"/>
+    </test-case>
+
+    <test-case>
+        <q>obsceneWord</q>
+        <a state="/ObsceneWord"/>
+        <q>астраханский</q>
+        <a state="/ObsceneWord/NotObscene"/>
+    </test-case>
+
+    <test-case>
+        <q>obsceneWord</q>
+        <a state="/ObsceneWord"/>
+        <q>охереть</q>
+        <a state="/ObsceneWord/Obscene"/>
+    </test-case>
+
+    <test-case>
+        <q>obsceneWord</q>
+        <a state="/ObsceneWord"/>
+        <q>херово</q>
+        <a state="/ObsceneWord/NotObscene"/>
+    </test-case>
+
+    <test-case>
+        <q>obsceneWord</q>
+        <a state="/ObsceneWord"/>
+        <q>херня</q>
+        <a state="/ObsceneWord/NotObscene"/>
+    </test-case>
+
+    <test-case>
+        <q>obsceneWord</q>
+        <a state="/ObsceneWord"/>
+        <q>хрень</q>
+        <a state="/ObsceneWord/NotObscene"/>
+    </test-case>
+
+    <test-case>
+        <q>obsceneWord</q>
+        <a state="/ObsceneWord"/>
+        <q>хренотень</q>
+        <a state="/ObsceneWord/NotObscene"/>
+    </test-case>
+
+    <test-case>
+        <q>obsceneWord</q>
+        <a state="/ObsceneWord"/>
+        <q>хреновина</q>
+        <a state="/ObsceneWord/NotObscene"/>
+    </test-case>
+
+    <test-case>
+        <q>obsceneWord</q>
+        <a state="/ObsceneWord"/>
+        <q>херота</q>
+        <a state="/ObsceneWord/NotObscene"/>
+    </test-case>
+
+    <test-case>
+        <q>obsceneWord</q>
+        <a state="/ObsceneWord"/>
+        <q>хер</q>
+        <a state="/ObsceneWord/Obscene"/>
+    </test-case>
+
+    <test-case>
+        <q>obsceneWord</q>
+        <a state="/ObsceneWord"/>
+        <q>херотень</q>
+        <a state="/ObsceneWord/NotObscene"/>
+    </test-case>
+
+    <test-case>
+        <q>obsceneWord</q>
+        <a state="/ObsceneWord"/>
+        <q>нихера</q>
+        <a state="/ObsceneWord/NotObscene"/>
+    </test-case>
+
+    <test-case>
+        <q>obsceneWord</q>
+        <a state="/ObsceneWord"/>
+        <q>нихрена</q>
+        <a state="/ObsceneWord/NotObscene"/>
+    </test-case>
+
+    <test-case>
+        <q>obsceneWord</q>
+        <a state="/ObsceneWord"/>
+        <q>мудозвон</q>
+        <a state="/ObsceneWord/Obscene"/>
+    </test-case>
+
+    <test-case>
+        <q>obsceneWord</q>
+        <a state="/ObsceneWord"/>
+        <q>пох</q>
+        <a state="/ObsceneWord/NotObscene"/>
+    </test-case>
+
+    <test-case>
+        <q>obsceneWord</q>
+        <a state="/ObsceneWord"/>
+        <q>нах</q>
+        <a state="/ObsceneWord/NotObscene"/>
+    </test-case>
+
+    <test-case>
+        <q>obsceneWord</q>
+        <a state="/ObsceneWord"/>
+        <q>барсучка</q>
+        <a state="/ObsceneWord/NotObscene"/>
+    </test-case>
+
+    <test-case>
+        <q>obsceneWord</q>
+        <a state="/ObsceneWord"/>
+        <q>сучкорез</q>
+        <a state="/ObsceneWord/NotObscene"/>
+    </test-case>
+
+    <test-case>
+        <q>obsceneWord</q>
+        <a state="/ObsceneWord"/>
+        <q>сучковатый</q>
+        <a state="/ObsceneWord/NotObscene"/>
+    </test-case>
+
+    <test-case>
+        <q>obsceneWord</q>
+        <a state="/ObsceneWord"/>
+        <q>спорно</q>
+        <a state="/ObsceneWord/NotObscene"/>
+    </test-case>
+
+    <test-case>
+        <q>obsceneWord</q>
+        <a state="/ObsceneWord"/>
+        <q>еблан</q>
+        <a state="/ObsceneWord/Obscene"/>
+    </test-case>
+
+    <test-case>
+        <q>obsceneWord</q>
+        <a state="/ObsceneWord"/>
+        <q>ебланище</q>
+        <a state="/ObsceneWord/Obscene"/>
+    </test-case>
+
+    <test-case>
+        <q>obsceneWord</q>
+        <a state="/ObsceneWord"/>
+        <q>еблет</q>
+        <a state="/ObsceneWord/Obscene"/>
+    </test-case>
+
+    <test-case>
+        <q>obsceneWord</q>
+        <a state="/ObsceneWord"/>
+        <q>ебанат</q>
+        <a state="/ObsceneWord/Obscene"/>
+    </test-case>
+
+    <test-case>
+        <q>obsceneWord</q>
+        <a state="/ObsceneWord"/>
+        <q>ебобо</q>
+        <a state="/ObsceneWord/Obscene"/>
+    </test-case>
+
+    <test-case>
+        <q>obsceneWord</q>
+        <a state="/ObsceneWord"/>
+        <q>ебись</q>
+        <a state="/ObsceneWord/Obscene"/>
+    </test-case>
+
+    <test-case>
+        <q>obsceneWord</q>
+        <a state="/ObsceneWord"/>
+        <q>ебитесь</q>
+        <a state="/ObsceneWord/Obscene"/>
+    </test-case>
+
+    <test-case>
+        <q>obsceneWord</q>
+        <a state="/ObsceneWord"/>
+        <q>ебаться</q>
+        <a state="/ObsceneWord/Obscene"/>
+    </test-case>
+
+    <test-case>
+        <q>obsceneWord</q>
+        <a state="/ObsceneWord"/>
+        <q>ебнутый</q>
+        <a state="/ObsceneWord/Obscene"/>
+    </test-case>
+
+    <test-case>
+        <q>obsceneWord</q>
+        <a state="/ObsceneWord"/>
+        <q>давалка</q>
+        <a state="/ObsceneWord/Obscene"/>
+    </test-case>
+
+    <test-case>
+        <q>obsceneWord</q>
+        <a state="/ObsceneWord"/>
+        <q>переипать</q>
+        <a state="/ObsceneWord/Obscene"/>
+    </test-case>
+
+    <test-case>
+        <q>obsceneWord</q>
+        <a state="/ObsceneWord"/>
+        <q>заипали</q>
+        <a state="/ObsceneWord/Obscene"/>
+    </test-case>
+
+    <test-case>
+        <q>obsceneWord</q>
+        <a state="/ObsceneWord"/>
+        <q>куни</q>
+        <a state="/ObsceneWord/Obscene"/>
+    </test-case>
+
+    <test-case>
+        <q>obsceneWord</q>
+        <a state="/ObsceneWord"/>
+        <q>кунилингус</q>
+        <a state="/ObsceneWord/Obscene"/>
+    </test-case>
+
+    <test-case>
+        <q>obsceneWord</q>
+        <a state="/ObsceneWord"/>
+        <q>куница</q>
+        <a state="/ObsceneWord/NotObscene"/>
+    </test-case>
+
+    <test-case>
+        <q>obsceneWord</q>
+        <a state="/ObsceneWord"/>
+        <q>малафья</q>
+        <a state="/ObsceneWord/Obscene"/>
+    </test-case>
+
+    <test-case>
+        <q>obsceneWord</q>
+        <a state="/ObsceneWord"/>
+        <q>малафить</q>
+        <a state="/ObsceneWord/Obscene"/>
+    </test-case>
+
+    <test-case>
+        <q>obsceneWord</q>
+        <a state="/ObsceneWord"/>
+        <q>гейпорно</q>
+        <a state="/ObsceneWord/Obscene"/>
+    </test-case>
+
+    <test-case>
+        <q>obsceneWord</q>
+        <a state="/ObsceneWord"/>
+        <q>гей-порно</q>
+        <a state="/ObsceneWord/Obscene"/>
+    </test-case>
+
+    <test-case>
+        <q>obsceneWord</q>
+        <a state="/ObsceneWord"/>
+        <q>порнуха</q>
+        <a state="/ObsceneWord/Obscene"/>
+    </test-case>
+
+    <test-case>
+        <q>obsceneWord</q>
+        <a state="/ObsceneWord"/>
+        <q>ebay</q>
+        <a state="/ObsceneWord/NotObscene"/>
+    </test-case>
+
+    <test-case>
+        <q>obsceneWord</q>
+        <a state="/ObsceneWord"/>
+        <q>eb</q>
+        <a state="/ObsceneWord/Obscene"/>
+    </test-case>
+
+    <test-case>
+        <q>obsceneWord</q>
+        <a state="/ObsceneWord"/>
+        <q>eb</q>
+        <a state="/ObsceneWord/Obscene"/>
+    </test-case>
+
+    <test-case>
+        <q>obsceneWord</q>
+        <a state="/ObsceneWord"/>
+        <q>ebu</q>
+        <a state="/ObsceneWord/Obscene"/>
+    </test-case>
+
+    <test-case>
+        <q>obsceneWord</q>
+        <a state="/ObsceneWord"/>
+        <q>минет</q>
+        <a state="/ObsceneWord/NotObscene"/>
+    </test-case>
+
+    <test-case>
+        <q>obsceneWord</q>
+        <a state="/ObsceneWord"/>
+        <q>сделай минет</q>
+        <a state="/ObsceneWord/Obscene"/>
+    </test-case>
+
+    <test-case>
+        <q>obsceneWord</q>
+        <a state="/ObsceneWord"/>
+        <q>сделай мне страстный глубокий минет</q>
+        <a state="/ObsceneWord/Obscene"/>
+    </test-case>
+
+    <test-case>
+        <q>obsceneWord</q>
+        <a state="/ObsceneWord"/>
+        <q>хочу минет</q>
+        <a state="/ObsceneWord/Obscene"/>
+    </test-case>
+
+    <test-case>
+        <q>obsceneWord</q>
+        <a state="/ObsceneWord"/>
+        <q>все парни хотят от тебя минет</q>
+        <a state="/ObsceneWord/Obscene"/>
+    </test-case>
+
+    <test-case>
+        <q>obsceneWord</q>
+        <a state="/ObsceneWord"/>
+        <q>а минет мне сделать не хочешь?</q>
+        <a state="/ObsceneWord/Obscene"/>
+    </test-case>
+
+    <test-case>
+        <q>obsceneWord</q>
+        <a state="/ObsceneWord"/>
+        <q>манда</q>
+        <a state="/ObsceneWord/Obscene"/>
+    </test-case>
+
+    <test-case>
+        <q>obsceneWord</q>
+        <a state="/ObsceneWord"/>
+        <q>срать на вас</q>
+        <a state="/ObsceneWord/Obscene"/>
+    </test-case>
+
+    <test-case>
+        <q>obsceneWord</q>
+        <a state="/ObsceneWord"/>
+        <q>черножопый</q>
+        <a state="/ObsceneWord/Obscene"/>
+    </test-case>
+
+    <test-case>
+        <q>obsceneWord</q>
+        <a state="/ObsceneWord"/>
+        <q>чмо</q>
+        <a state="/ObsceneWord/Obscene"/>
+    </test-case>
+
+    <test-case>
+        <q>obsceneWord</q>
+        <a state="/ObsceneWord"/>
+        <q>гомосек</q>
+        <a state="/ObsceneWord/Obscene"/>
+    </test-case>
+
+    <test-case>
+        <q>obsceneWord</q>
+        <a state="/ObsceneWord"/>
+        <q>зачмырить</q>
+        <a state="/ObsceneWord/Obscene"/>
+    </test-case>
+
+    <test-case>
+        <q>obsceneWord</q>
+        <a state="/ObsceneWord"/>
+        <q>зачморить</q>
+        <a state="/ObsceneWord/Obscene"/>
+    </test-case>
+
+    <test-case>
+        <q>obsceneWord</q>
+        <a state="/ObsceneWord"/>
+        <q>huawei</q>
+        <a state="/ObsceneWord/NotObscene"/>
+    </test-case>
+
+    <test-case>
+        <q>obsceneWord</q>
+        <a state="/ObsceneWord"/>
+        <q>на бермудах</q>
+        <a state="/ObsceneWord/NotObscene"/>
+    </test-case>
+    
+    <test-case>
+        <q>obsceneWord</q>
+        <a state="/ObsceneWord"/>
+        <q>сукин сын</q>
+        <a state="/ObsceneWord/Obscene"/>
+    </test-case>
+    
+    <test-case>
+        <q>obsceneWord</q>
+        <a state="/ObsceneWord"/>
+        <q>сукины дети</q>
+        <a state="/ObsceneWord/Obscene"/>
+    </test-case>
+
+</test>

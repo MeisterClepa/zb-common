@@ -1,0 +1,21 @@
+<test>
+    <test-case>
+        <q>Құлсары</q>
+        <a>city: Құлсары</a>
+    </test-case>
+
+    <test-case>
+        <q>Сарқант</q>
+        <a>city: Сарқант</a>
+    </test-case>
+
+    <test-case>
+        <q>Алматы</q>
+        <a>city: Алматы</a>
+    </test-case>
+
+    <test-case>
+        <q>Астана</q>
+        <a>city: Астана</a>
+    </test-case>
+</test>

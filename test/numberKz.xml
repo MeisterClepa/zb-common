@@ -1,0 +1,118 @@
+<test>
+
+    <test-case>
+        <q>33</q>
+        <a>number: 33</a>
+    </test-case>
+
+    <test-case>
+        <q>отыз үш</q>
+        <a>number: 33</a>
+    </test-case>
+
+    <test-case>
+        <q>екінші</q>
+        <a>number: 2</a>
+    </test-case>
+
+    <test-case>
+        <q>2 миллион және 3 мың</q>
+        <a>number: 2003000</a>
+    </test-case>
+
+    <test-case>
+        <q>жүз он тоғыз</q>
+        <a>number: 119</a>
+    </test-case>
+
+    <test-case>
+        <q>екі жүз үш</q>
+        <a>number: 203</a>
+    </test-case>
+
+    <test-case>
+        <q>30.000</q>
+        <a>number: 30000</a>
+    </test-case>
+
+    <test-case>
+        <q>550.000.000</q>
+        <a>number: 550000000</a>
+    </test-case>
+
+    <test-case>
+        <q>5 мың</q>
+        <a>number: 5000</a>
+    </test-case>
+
+    <test-case>
+        <q>3 млн</q>
+        <a>number: 3000000</a>
+    </test-case>
+
+    <test-case>
+        <q>2 ляма</q>
+        <a>number: 2000000</a>
+    </test-case>
+
+    <test-case>
+        <q>-10</q>
+        <a>number: -10</a>
+    </test-case>
+
+    <test-case>
+        <q>минус жүз үш</q>
+        <a>number: -103</a>
+    </test-case>
+
+    <test-case>
+        <q>нөл</q>
+        <a>number: 0</a>
+    </test-case>
+
+    <test-case>
+        <q>number он екі, елу</q>
+        <a>numbers: 12, 50</a>
+    </test-case>
+
+    <test-case>
+        <q>number он екі, екі жүз елу</q>
+        <a>numbers: 12, 250</a>
+    </test-case>
+
+    <test-case>
+        <q>number бес мың бес жүз елу</q>
+        <a>numbers: 5550</a>
+    </test-case>
+
+    <test-case>
+        <q>number он екі, бес мың елу</q>
+        <a>numbers: 12, 5050</a>
+    </test-case>
+
+    <test-case>
+        <q>number екі мың жүз елу</q>
+        <a>numbers: 2150</a>
+    </test-case>
+
+    <test-case>
+        <q>пять мың бес жүз елу</q>
+        <a>number: 5550</a>
+    </test-case>
+
+    <test-case>
+        <q>number отыз</q>
+        <a>numbers: 30</a>
+    </test-case>
+
+    <test-case>
+        <q>number он екі мың бес жүз елу, отыз</q>
+        <a>numbers: 12550, 30</a>
+    </test-case>
+
+    <test-case>
+        <q>number он екі мың бес жүз елу</q>
+        <a>numbers: 12550</a>
+    </test-case>
+
+</test>
