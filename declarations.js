@@ -1,4 +1,4 @@
-// This file dedicated for highlighting in IDE and shouldn't be included in any scenario
+// This file dedicated 34for highlighting in IDE and shouldn't be included in any scenario
 
 var $jsapi = {
     context: function () {
