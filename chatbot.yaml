@@ -1,0 +1,39 @@
+# NB! модули music, car и currency не работают с morphsrus (вызывают ошибку java RuntimeException: java.lang.IllegalStateException)
+
+name: zenbot-common
+
+entryPoint: test.sc
+
+# botEngine: v2
+# language: ru
+
+injector:
+  offtopic:
+    company: Just AI
+    botname: Zen
+    #type: formal/informal
+    #gender: male/female
+  geocoder:
+    apiKeyYandex: 863c7481-0e5a-4869-a7c8-8b244728e49f
+    apiKeyGoogle: AIzaSyCrba-g0h3on_uhYaZ0cV7dJ0dMxc4qzyQ
+
+tests:
+  exclude:
+    - text.xml
+    - newSession.xml
+    - offtopic.xml
+    - numToString.xml
+    - cityKz.xml # нужно включать, когда соотв. файл есть в зависимостях
+    - dateTimeKz.xml # нужно включать, когда соотв. файл есть в зависимостях
+    - numberKz.xml # нужно включать, когда соотв. файл есть в зависимостях
+
+
+# ---
+
+# Комментарий для лингвиста-разработчика
+
+# Чтобы прогнать тесты cityKz.xml, dateTimeKz.xml, numberKz.xml вместе со всеми остальными тестами, необходимо в файлах этого проекта заменить зависимости с "require: ../number/number.sc" на "require: ../number/numberKz.sc", где они используются.
+
+# Также стоит посмотреть примечание к /number/numberKz.sc.
+
+# ---
